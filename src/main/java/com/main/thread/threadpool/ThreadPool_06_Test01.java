@@ -6,7 +6,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
 /**
- * @author lulu.zou
+ * @author  admin
  * @version 2018/4/24
  * @since 2018/4/24
  */
