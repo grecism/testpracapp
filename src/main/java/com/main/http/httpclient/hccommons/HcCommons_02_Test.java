@@ -18,10 +18,10 @@ public class HcCommons_02_Test {
     public static void main(String[] args) {
         //构造HttpClient的实例
         HttpClient httpClient = new HttpClient();
-        String url = "http://yccadmintest.10101111.com/#/login";
+        String url = "url";
         PostMethod postMethod = new PostMethod(url);
         //填入各个表单域的值
-        NameValuePair[] data = {new NameValuePair("text","xuser"),new NameValuePair("password","Zc123456")};
+        NameValuePair[] data = {new NameValuePair("text","xxx"),new NameValuePair("password","123")};
         //将表单的值放入postMethod中
         postMethod.setRequestBody(data);
         try {

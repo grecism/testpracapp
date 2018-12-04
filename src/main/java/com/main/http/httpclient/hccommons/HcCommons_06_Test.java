@@ -24,8 +24,8 @@ public class HcCommons_06_Test {
     //以后尽管访问client实例即可。
     public static void main(String[] args) throws IOException {
         HttpClient httpClient = new HttpClient();
-        httpClient.getState().setCredentials("http://yccadmintest.10101111.com/#/login","realm",new UsernamePasswordCredentials("Xuser","Zc123456"));
-        GetMethod getMethod = new GetMethod("http://yccadmintest.10101111.com/#/");
+        httpClient.getState().setCredentials("url","realm",new UsernamePasswordCredentials("xxx","123"));
+        GetMethod getMethod = new GetMethod("url");
         getMethod.setDoAuthentication(true);
         int statusCode = httpClient.executeMethod(getMethod);
         System.out.println(statusCode+"\n"+getMethod.getResponseBodyAsString());
