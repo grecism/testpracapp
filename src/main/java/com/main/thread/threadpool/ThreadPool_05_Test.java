@@ -16,10 +16,10 @@ public class ThreadPool_05_Test {
         ArrayBlockingQueue<Runnable> arrayBlockingQueue = new ArrayBlockingQueue<Runnable>(20);
         //创建线程池，池中保存的线程数为3，允许的最大线程数为5。
         ThreadPoolExecutor pool = new ThreadPoolExecutor(3,5,50, TimeUnit.SECONDS,arrayBlockingQueue);
-        //创建10个任务。
+        //创建20个任务。
         for (int i = 0; i < 20; i++) {
             pool.execute(new ThreadPool_05_Thread(i));
-            System.out.println("线程池中线程数目："+pool.getPoolSize()+"，队列中等待执行的任务数目："+
+            System.out.println("线程池中线程数目："+pool.getPoolSize()+"，队列中等待执行的任务数目（返回此执行器使用的任务队列）："+
                     pool.getQueue().size()+"，已执行完别的任务数目："+pool.getCompletedTaskCount());
         }
         pool.shutdown();
@@ -36,7 +36,7 @@ class ThreadPool_05_Thread implements Runnable{
     public void run() {
         try {
             System.out.println("CurrentThreadName="+Thread.currentThread().getName()+"正在执行。。。"+index);
-            Thread.sleep(1000);
+            Thread.sleep(10000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
