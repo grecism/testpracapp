@@ -1,4 +1,4 @@
-package com.main.http.httpclient.hccommons;
+package com.main.http.commons.httpclient;
 
 import org.apache.commons.httpclient.DefaultHttpMethodRetryHandler;
 import org.apache.commons.httpclient.HttpClient;
@@ -6,6 +6,7 @@ import org.apache.commons.httpclient.HttpException;
 import org.apache.commons.httpclient.HttpStatus;
 import org.apache.commons.httpclient.methods.GetMethod;
 import org.apache.commons.httpclient.params.HttpMethodParams;
+
 import java.io.IOException;
 
 /**
@@ -13,7 +14,7 @@ import java.io.IOException;
  * @version 2018/5/11
  * @since 2018/5/11
  */
-public class HcCommons_01_Test {
+public class HttpClientTwo_01_Test {
     /**jar包**/
     //<!-- https://mvnrepository.com/artifact/commons-httpclient/commons-httpclient -->
 

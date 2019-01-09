@@ -1,4 +1,4 @@
-package com.main.http.httpclient.hccommons;
+package com.main.http.commons.httpclient;
 
 import org.apache.commons.httpclient.Header;
 import org.apache.commons.httpclient.HttpClient;
@@ -6,6 +6,7 @@ import org.apache.commons.httpclient.HttpException;
 import org.apache.commons.httpclient.HttpStatus;
 import org.apache.commons.httpclient.NameValuePair;
 import org.apache.commons.httpclient.methods.PostMethod;
+
 import java.io.IOException;
 
 /**
@@ -13,7 +14,7 @@ import java.io.IOException;
  * @version 2018/5/11
  * @since 2018/5/11
  */
-public class HcCommons_02_Test {
+public class HttpClientTwo_02_Test {
     //POST方法
     public static void main(String[] args) {
         //构造HttpClient的实例

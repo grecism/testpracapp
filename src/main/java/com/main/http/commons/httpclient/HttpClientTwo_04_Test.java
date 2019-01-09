@@ -1,9 +1,10 @@
-package com.main.http.httpclient.hccommons;
+package com.main.http.commons.httpclient;
 
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.HttpStatus;
 import org.apache.commons.httpclient.methods.PostMethod;
 import org.apache.commons.lang3.StringUtils;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -14,7 +15,7 @@ import java.io.InputStreamReader;
  * @version 2018/5/11
  * @since 2018/5/11
  */
-public class HcCommons_04_Test {
+public class HttpClientTwo_04_Test {
     /**使用POST方式提交数据(httpClient3)**/
     //httpclient使用了单独的一个HttpMethod子类来处理文件的上传，这个类就是MultipartPostMethod，该类已经封装了文件上传的细节，我们要做的仅仅是告诉它我们要上传文件的全路径即可，两种模拟上传的方式。
     //第一种：模拟上传url文件(该方式也适合做普通post请求)

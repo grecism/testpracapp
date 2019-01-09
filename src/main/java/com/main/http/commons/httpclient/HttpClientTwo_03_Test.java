@@ -1,8 +1,9 @@
-package com.main.http.httpclient.hccommons;
+package com.main.http.commons.httpclient;
 
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.HttpMethod;
 import org.apache.commons.httpclient.methods.GetMethod;
+
 import java.io.IOException;
 
 /**
@@ -10,7 +11,7 @@ import java.io.IOException;
  * @version 2018/5/11
  * @since 2018/5/11
  */
-public class HcCommons_03_Test {
+public class HttpClientTwo_03_Test {
     /**blog**/
     //https://www.cnblogs.com/ITtangtang/p/3968093.html
 

@@ -1,4 +1,4 @@
-package com.main.http.httpclient.hccommons;
+package com.main.http.commons.httpclient;
 
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.HttpStatus;
@@ -6,6 +6,7 @@ import org.apache.commons.httpclient.methods.PostMethod;
 import org.apache.commons.httpclient.methods.multipart.FilePart;
 import org.apache.commons.httpclient.methods.multipart.MultipartRequestEntity;
 import org.apache.commons.httpclient.methods.multipart.Part;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
@@ -17,7 +18,7 @@ import java.io.InputStreamReader;
  * @version 2018/5/11
  * @since 2018/5/11
  */
-public class HcCommons_05_Test {
+public class HttpClientTwo_05_Test {
     //第二种：模拟文件上传到指定位置
     public static void main(String[] args) {
         File file = new File("");

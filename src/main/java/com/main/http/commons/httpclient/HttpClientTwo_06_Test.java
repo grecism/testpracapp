@@ -1,8 +1,9 @@
-package com.main.http.httpclient.hccommons;
+package com.main.http.commons.httpclient;
 
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.UsernamePasswordCredentials;
 import org.apache.commons.httpclient.methods.GetMethod;
+
 import java.io.IOException;
 
 /**
@@ -10,7 +11,7 @@ import java.io.IOException;
  * @version 2018/5/11
  * @since 2018/5/11
  */
-public class HcCommons_06_Test {
+public class HttpClientTwo_06_Test {
     /**访问启用认证的页面**/
     //我们经常会碰到这样的页面，当访问它的时候会弹出一个浏览器的对话框要求输入用户名和密码后方可，这种用户认证的方式不同于我们在前面介绍的基于表单的用户身份验证。这是HTTP的认证策略，
     //httpclient支持三种认证方式包括：基本、摘要以及NTLM认证。其中基本认证最简单、通用但也最不安全；摘要认证是在HTTP 1.1中加入的认证方式，而NTLM则是微软公司定义的而不是通用的规范，
